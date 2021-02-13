@@ -64,7 +64,9 @@ const calculationResultNested_1 = {
   claims: {
     claim_1: {
       CA: {
-        developedLossAmount: 22
+        developedLossAmount: 22,
+        libertyPays: "incrLossAmount" - "customerLiability",
+        customerLiability: 0
       },
       FL: {
         developedLossAmount: 5
