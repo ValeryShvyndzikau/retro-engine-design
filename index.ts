@@ -9,12 +9,41 @@ interface CalculationContext {
 
 // Flat structure example / table items
 // TODO: Think about claim and state, probably introduce index
-interface CalculationResultFlat1 {
+interface CalculationResultFlat_1 {
   agreementId: 123;
   claimId: "abc";
   state: "FL";
-  calculations: {};
+  developedLossAmount: 22;
+  libertyPays: 47; // incrLossAmount - customerLiability
+  customerLiability: 0;
+  totalRatableLoss: 21; // root level or state level?
+  totalIncrLossAmount: 55; // root level or state level?
+  vePremiumAmount: 21;
 }
+
+const calculationResultFlat_1 = {
+  agreementId: 123,
+  claimId: "abc",
+  state: "FL",
+  developedLossAmount: 22,
+  libertyPays: 47,
+  customerLiability: 0,
+  totalRatableLoss: 21,
+  totalIncrLossAmount: 55,
+  vePremiumAmount: 21
+};
+
+const calculationResultFlat_2 = {
+  agreementId: 456,
+  claimId: "cde",
+  state: "FCA",
+  developedLossAmount: 22,
+  libertyPays: 47,
+  customerLiability: 0,
+  totalRatableLoss: 21,
+  totalIncrLossAmount: 55,
+  vePremiumAmount: 21
+};
 
 interface CalculationResultFlat2 {
   agreementId: 345;
