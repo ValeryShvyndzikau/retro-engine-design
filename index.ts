@@ -71,8 +71,12 @@ const calculationResultNested_1 = {
       }
     },
     claim_2: {
-      FL: {},
-      AL: {}
+      FL: {
+        developedLossAmount: 0
+      },
+      AL: {
+        developedLossAmount: 3
+      }
     }
   }
 };
