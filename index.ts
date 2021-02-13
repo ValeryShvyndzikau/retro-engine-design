@@ -68,7 +68,8 @@ const calculationResultNested_1 = {
         libertyPays: 47, // incrLossAmount - customerLiability
         customerLiability: 0,
         totalRatableLoss: 21, // root level or state level?
-        totalIncrLossAmount: 55 // root level or state level?
+        totalIncrLossAmount: 55, // root level or state level?
+        vePremiumAmount: 21
       },
       FL: {
         developedLossAmount: 5
