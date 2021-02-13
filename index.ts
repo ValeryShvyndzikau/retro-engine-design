@@ -44,6 +44,7 @@ interface CalculationResultNested {
 3. calcAuditPremium -> AuditedExposureService (1 more API integration point, no errors handling)
 4. DynamoService "insertItem" has optional "sortKey" param, but "getItem" recieves only "pk"
   TODO: clarify in docs wheather it's OK or NOT!!!
+    + updateRecord() also
 
 5. TODO: EACH STEP DATA FROM DB & DATA TO DB !!!
 
