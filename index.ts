@@ -51,3 +51,12 @@ interface CalculationResultNested {
 7. DBClient - no Dependency Inversion (minor)
 
 */
+
+const calculationContext = {
+  planId: "abc",
+  agreementId: 123,
+  claims: {
+    claimId_1: ["FL", "AL"],
+    claimId_2: ["CA"]
+  }
+};
