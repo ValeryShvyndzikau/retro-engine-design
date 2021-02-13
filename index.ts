@@ -47,5 +47,6 @@ interface CalculationResultNested {
     + updateRecord() also
 
 5. TODO: EACH STEP DATA FROM DB & DATA TO DB !!!
+6. DBClient - no Dependency Inversion
 
 */
