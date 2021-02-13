@@ -36,7 +36,7 @@ const calculationResultFlat_1 = {
 const calculationResultFlat_2 = {
   agreementId: 456,
   claimId: "cde",
-  state: "FCA",
+  state: "CA",
   developedLossAmount: 22,
   libertyPays: 47,
   customerLiability: 0,
