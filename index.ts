@@ -48,6 +48,6 @@ interface CalculationResultNested {
 
 5. TODO: EACH STEP DATA FROM DB & DATA TO DB !!!
 6. Dynamo-Service is able to work only with one table!!!
-6. DBClient - no Dependency Inversion
+7. DBClient - no Dependency Inversion (minor)
 
 */
