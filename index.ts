@@ -23,7 +23,7 @@ interface CalculationResultFlat2 {
   calculations: {};
 }
 
-// Nested structure exable
+// Deep structure, reflects CURRENT APPROACH !!!
 interface CalculationResultNested {
   agreementId: 123;
   claims: {
@@ -52,7 +52,16 @@ interface CalculationResultNested {
 
 */
 
-const calculationContext = {
+const calculationContext1 = {
+  planId: "abc",
+  agreementId: 123,
+  claims: {
+    claimId_1: null,
+    claimId_2: null
+  }
+};
+
+const calculationContext2 = {
   planId: "abc",
   agreementId: 123,
   claims: {
