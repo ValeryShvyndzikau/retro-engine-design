@@ -65,7 +65,7 @@ const calculationResultNested_1 = {
     claim_1: {
       CA: {
         developedLossAmount: 22,
-        libertyPays: "incrLossAmount" - "customerLiability",
+        libertyPays: 47, // incrLossAmount - customerLiability
         customerLiability: 0,
         totalRatableLoss: 21, // root level or state level?
         totalIncrLossAmount: 55 // root level or state level?
