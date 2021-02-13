@@ -24,7 +24,7 @@ interface CalculationResultFlat2 {
 }
 
 // Deep structure, reflects CURRENT APPROACH !!!
-interface CalculationResultNested {
+interface CalculationResultNested_1 {
   agreementId: 123;
   claims: {
     claim_1: {
@@ -36,7 +36,46 @@ interface CalculationResultNested {
       AL: {}; // calculation results
     };
   };
+  developedLossAmount: {};
 }
+
+interface CalculationResultNested_1 {
+  agreementId: 123;
+  claims: {
+    claim_1: {
+      CA: {
+        developedLossAmount: number;
+      }; // calculation results
+      FL: {};
+    };
+    claim_2: {
+      FL: {}; // calculation results
+      AL: {}; // calculation results
+    };
+  };
+  developedLossAmountd: {};
+}
+
+// Deep model
+const calculationResultNested_1 = {
+  planId: "abc",
+  agreementId: 123,
+  // structure can be more flatter
+  claims: {
+    claim_1: {
+      CA: {
+        developedLossAmount: 22
+      },
+      FL: {
+        developedLossAmount: 5
+      }
+    },
+    claim_2: {
+      FL: {},
+      AL: {}
+    }
+  }
+};
 
 /*
 1. planId vs agreementId
