@@ -34,15 +34,21 @@ const calculationResultFlat_1 = {
 };
 
 const calculationResultFlat_2 = {
+  planId: "abc",
   agreementId: 456,
   claimId: "cde",
   state: "CA",
-  developedLossAmount: 22,
-  libertyPays: 47,
-  customerLiability: 0,
-  totalRatableLoss: 21,
-  totalIncrLossAmount: 55,
-  vePremiumAmount: 21
+  valuationDate: "",
+  claims: [{}, {}], // will be place at the final step
+  totalRatableLoss: 1200,
+  totalIncrLossAmount: 500,
+  developedLossAmount: 700,
+  vePremiumAmount: 450,
+  lossTaxesAmount: 200,
+  veTaxesAmount: 15,
+  premiumTaxesAmount: 300,
+  adminExpense: 30,
+  terrorismPremium: 100
 };
 
 interface CalculationResultFlat2 {
