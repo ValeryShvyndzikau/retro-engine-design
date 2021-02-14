@@ -22,22 +22,28 @@ interface CalculationResultFlat_1 {
 }
 
 const calculationResultFlat_1 = {
-  agreementId: 123,
-  claimId: "abc",
-  state: "FL",
-  developedLossAmount: 22,
-  libertyPays: 47,
-  customerLiability: 0,
-  totalRatableLoss: 21,
-  totalIncrLossAmount: 55,
-  vePremiumAmount: 21
+  planId: "abc",
+  agreementId: 456,
+  claimId: "cde",
+  state: "CA",
+  valuationDate: "",
+  claims: [{}, {}], // will be place at the final step
+  totalRatableLoss: 100,
+  totalIncrLossAmount: 300,
+  developedLossAmount: 900,
+  vePremiumAmount: 40,
+  lossTaxesAmount: 800,
+  veTaxesAmount: 75,
+  premiumTaxesAmount: 30,
+  adminExpense: 20,
+  terrorismPremium: 800
 };
 
 const calculationResultFlat_2 = {
   planId: "abc",
   agreementId: 456,
   claimId: "cde",
-  state: "CA",
+  state: "FL",
   valuationDate: "",
   claims: [{}, {}], // will be place at the final step
   totalRatableLoss: 1200,
