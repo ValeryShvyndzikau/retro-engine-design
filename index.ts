@@ -105,24 +105,33 @@ const calculationResultNested_1 = {
   claims: {
     claim_1: {
       CA: {
-        developedLossAmount: 22,
-        libertyPays: 47, // incrLossAmount - customerLiability
-        customerLiability: 0,
-        totalRatableLoss: 21, // root level or state level?
-        totalIncrLossAmount: 55, // root level or state level?
-        vePremiumAmount: 21
+        valuationDate: "",
+        totalRatableLoss: 1200,
+        totalIncrLossAmount: 500,
+        developedLossAmount: 700,
+        vePremiumAmount: 450,
+        lossTaxesAmount: 200,
+        veTaxesAmount: 15,
+        premiumTaxesAmount: 300,
+        adminExpense: 30,
+        terrorismPremium: 100
       },
       FL: {
-        developedLossAmount: 5
+        valuationDate: "",
+        totalRatableLoss: 1200,
+        totalIncrLossAmount: 500,
+        developedLossAmount: 700,
+        vePremiumAmount: 450,
+        lossTaxesAmount: 200,
+        veTaxesAmount: 15,
+        premiumTaxesAmount: 300,
+        adminExpense: 30,
+        terrorismPremium: 100
       }
     },
     claim_2: {
-      FL: {
-        developedLossAmount: 0
-      },
-      AL: {
-        developedLossAmount: 3
-      }
+      FL: {},
+      AL: {}
     }
   }
 };
@@ -158,3 +167,19 @@ const calculationContext2 = {
     claimId_2: ["CA"]
   }
 };
+
+/*
+{
+  planData, //duplicated Data
+  claim: [],
+  state: CA,
+  ...calculation
+}
+
+{
+  planData,
+  stateInformation: [
+    {state: CA}
+  ]
+}
+*/
